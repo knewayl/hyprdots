@@ -1,3 +1,19 @@
+selection_foreground none
+selection_background none
+
+foreground         {{foreground}}
+background         {{background}}
+cursor             {{cursor}}
+
+active_tab_foreground     {{background}}
+active_tab_background     {{foreground}}
+inactive_tab_foreground   {{foreground}}
+inactive_tab_background   {{background}}
+
+active_border_color   {{foreground}}
+inactive_border_color {{background}}
+bell_border_color     {{color1}}
+
 color0                {{color1}}
 color8                {{color2}}
 color1                {{color3}}
@@ -13,5 +29,4 @@ color13               {{color12}}
 color6                {{color13}}
 color14               {{color14}}
 color7                {{color15}}
-color15               {{color16}}
 
