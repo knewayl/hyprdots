@@ -1,4 +1,4 @@
 # BEGIN_KITTY_THEME
 # Colors
-include themes/colors.conf
+include colors.conf
 # END_KITTY_THEME

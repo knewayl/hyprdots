@@ -75,13 +75,13 @@
         "on-click": "playerctl play-pause"
     },
     "custom/launcher":{
-        "format": "󰣇 ",
+        "format": " ",
         "on-click": "wofi --show drun",
         "on-click-right": "killall wofi"
     },
     "custom/power":{
         "format": " ",
-        "on-click": "bash ~/.config/rofi/leave/leave.sh",
+        "on-click": "bash ~/.config/rofi/leave/leave.sh"
     },
     "custom/updates":{
         "format": "{} Update(s)",

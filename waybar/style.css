@@ -27,7 +27,7 @@ window#waybar.hidden {
 	margin-top: 6px;
 	margin-left: 12px;
 	font-size: 4px;
-	margin-bottom: 0px;
+	margin-bottom:5px;
 	border-radius: 10px;
 	background: #161320;
 	transition: none;
@@ -72,7 +72,7 @@ window#waybar.hidden {
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
-	margin-bottom: 0px;
+	margin-bottom:5px;
 	border-radius: 10px;
 	transition: none;
 	color: #161320;
@@ -84,11 +84,11 @@ window#waybar.hidden {
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
-	margin-bottom: 0px;
+	margin-bottom:5px;
 	border-radius: 10px;
 	transition: none;
 	color: #1A1826;
-	background: #FAE3B0;
+	background: #D78CD8;
 }
 
 #battery {
@@ -96,11 +96,11 @@ window#waybar.hidden {
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
-	margin-bottom: 0px;
+	margin-bottom:5px;
 	border-radius: 10px;
 	transition: none;
 	color: #161320;
-	background: #B5E8E0;
+	background: #B47FE5;
 }
 
 #battery.charging, #battery.plugged {
@@ -130,22 +130,22 @@ window#waybar.hidden {
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
-	margin-bottom: 0px;
+	margin-bottom:5px;
 	border-radius: 10px;
 	transition: none;
 	color: #161320;
-	background: #F8BD96;
+	background: #DAB0E9;
 }
 #clock {
 	margin-top: 6px;
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
-	margin-bottom: 0px;
+	margin-bottom:5px;
 	border-radius: 10px;
 	transition: none;
 	color: #161320;
-	background: #ABE9B3;
+	background: #E0A7E1;
 	/*background: #1A1826;*/
 }
 
@@ -153,7 +153,7 @@ window#waybar.hidden {
 	margin-top: 6px;
 	margin-left: 8px;
 	padding-left: 10px;
-	margin-bottom: 0px;
+	margin-bottom:5px;
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
@@ -164,19 +164,19 @@ window#waybar.hidden {
 	margin-top: 6px;
 	margin-left: 8px;
 	padding-left: 10px;
-	margin-bottom: 0px;
+	margin-bottom:5px;
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
 	color: #161320;
-	background: #96CDFB;
+	background: #BEA2E6;
 }
 
 #tray {
 	margin-top: 6px;
 	margin-left: 8px;
 	padding-left: 10px;
-	margin-bottom: 0px;
+	margin-bottom:5px;
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
@@ -203,7 +203,7 @@ window#waybar.hidden {
 	margin-right: 8px;
 	padding-left: 10px;
 	padding-right: 5px;
-	margin-bottom: 0px;
+	margin-bottom:5px;
 	border-radius: 10px;
 	transition: none;
 	color: #161320;
@@ -215,7 +215,7 @@ window#waybar.hidden {
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
-	margin-bottom: 0px;
+	margin-bottom:5px;
 	border-radius: 10px;
 	transition: none;
 	color: #161320;
@@ -227,7 +227,7 @@ window#waybar.hidden {
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
-	margin-bottom: 0px;
+	margin-bottom:5px;
 	border-radius: 10px;
 	transition: none;
 	color: #161320;
@@ -239,7 +239,7 @@ window#waybar.hidden {
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
-	margin-bottom: 0px;
+	margin-bottom:5px;
 	border-radius: 10px;
 	transition: none;
 	color: #161320;

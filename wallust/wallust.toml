@@ -19,5 +19,6 @@ kitty.target = "~/.config/kitty/themes/colors.conf"
 waybar.template='waybar'
 waybar.target = "~/hyprfilez/colors.css"
 
-
+colorgen.template = "colorgen"
+colorgen.target = "~/colorgen"
 
