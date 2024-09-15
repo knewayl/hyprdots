@@ -1,0 +1,6 @@
+### Hyprland
+
+### Hyprlock
+
+### kitty
+
