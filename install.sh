@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "setting up software"
-sudo pacman -Syu hyprland hyprlock hypridle hyprpaper wofi mako kitty waybar ly neovim ttf-jetbrains-mono otf-font-awesome ttf-fira-code jdk-openjdk python-pipx grim slurp wf-recorder flatpak neofetch
+sudo pacman -Syu hyprland hyprlock hypridle hyprpaper wofi mako kitty waybar ly neovim ttf-jetbrains-mono otf-font-awesome ttf-fira-code jdk-openjdk python-pipx grim slurp wf-recorder flatpak neofetch nvim
 sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 git clone https://github.com/AdnanHodzic/auto-cpufreq.git
 cd auto-cpufreq && sudo ./auto-cpufreq-installer
