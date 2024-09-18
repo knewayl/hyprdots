@@ -1,4 +1,4 @@
-## Hyprland
+### Hyprland
 
 ### Hyprlock
 
