@@ -20,7 +20,7 @@ window#waybar.hidden {
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
-    color: transparent;
+    	color: transparent;
 	background: transparent;
 }
 #tags {
@@ -78,6 +78,19 @@ window#waybar.hidden {
 	color: #161320;
 	background: #bd93f9;
 }
+
+#bluetooth {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 5px;
+	border-radius: 10px;
+	transition: none;
+	color: #161320;
+	background: #bd93f9;
+}
+
 
 #pulseaudio {
 	margin-top: 6px;
@@ -234,7 +247,7 @@ window#waybar.hidden {
 	background: #E8A2AF;
 }
 
-#custom-media {
+#custom-spotify {
 	margin-top: 6px;
 	margin-left: 8px;
 	padding-left: 10px;
@@ -242,8 +255,8 @@ window#waybar.hidden {
 	margin-bottom:5px;
 	border-radius: 10px;
 	transition: none;
-	color: #161320;
-	background: #F2CDCD;
+	color: #202323;
+	background: #EBCEF6;
 }
 
 
@@ -253,6 +266,9 @@ window#waybar.hidden {
     color: #ffffff;
 }
 
+#workspaces button.active {
+    color: #EBCEF6;
+}
 #workspaces button:hover {
-	background: #9a687c;
+	background: #202323;
 }

@@ -1,8 +1,8 @@
 {
 	"layer": "top",
-	"modules-left": ["custom/launcher","cpu","memory","custom/media","tray"],
+	"modules-left": ["cpu","memory","bluetooth"],
 	"modules-center": ["hyprland/workspaces"],
-	"modules-right": ["backlight","pulseaudio","clock", "battery"],
+	"modules-right": ["network","backlight","pulseaudio","battery","clock"],
 	
 	"pulseaudio": {
 		"tooltip": false,
@@ -23,7 +23,15 @@
 	"network": {
 		"tooltip": false,
 		"format-wifi": "  {essid}",
-		"format-ethernet": ""
+		"format-ethernet": " 󰈀 "
+	},
+
+	"bluetooth":{
+		"tooltip": false,
+		"format": " {status}",
+		"format-connected": " {device_alias} {device_battery_percentage}%",
+		"format-disabled": ""
+
 	},
 	"backlight": {
 		"tooltip": false,
@@ -61,19 +69,18 @@
         "format": " {}%",
         "max-length": 10
     },
-    "custom/media": {
-        "interval": 30,
-        "format": "{icon} {}",
+
+    
+    "custom/spotify": {
+        "format": " ",
         "return-type": "json",
-        "max-length": 20,
-        "format-icons": {
-            "spotify": " ",
-            "default": " "
-        },
-        "escape": true,
-        "exec": "$HOME/.config/system_scripts/mediaplayer.py 2> /dev/null",
-        "on-click": "playerctl play-pause"
+        "on-click": "playerctl play-pause",
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous" },
+        "exec": "$HOME/.config/system_scripts/mediaplayer.py"
     },
+
+
     "custom/launcher":{
         "format": " ",
         "on-click": "wofi --show drun",
