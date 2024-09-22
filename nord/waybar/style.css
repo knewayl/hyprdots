@@ -1,0 +1,253 @@
+* {
+	border: none;
+	border-radius:0;
+    font-family: "JetBrainsMono Nerd Font" ;
+	font-size: 15px;
+	min-height: 15px;
+}
+
+window#waybar {
+	background: #000000;
+
+}
+
+window#waybar.hidden {
+	opacity: 0.2;
+}
+
+#window {
+	padding-left: 6px;
+	padding-right: 6px;
+	border-radius: 5px ;
+	transition: none;
+    	color: transparent;
+	
+}
+#tags {
+	margin-top: 3px;
+	margin-left: 12px;
+	font-size: 4px;
+	margin-bottom:5px;
+	border-radius: 5px ;
+	background: #161320;
+	transition: none;
+}
+
+#tags button {
+	transition: none;
+	color: #ffffff;
+	
+	font-size: 16px;
+	border-radius: 2px;
+}
+
+#tags button.occupied {
+	transition: none;
+	color: #ffffff;
+	
+	font-size: 4px;
+}
+
+#tags button.focused {
+	color: #ffffff;
+    border-top: 2px solid #ABE9B3;
+    border-bottom: 2px solid #ABE9B3;
+}
+
+#tags button:hover {
+	transition: none;
+	box-shadow: inherit;
+	text-shadow: inherit;
+	color: #ffffff;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+#tags button.focused:hover {
+    color: #ffffff;
+}
+
+#network {
+	margin-top: 3px;
+	margin-left: 8px;
+	padding-left: 6px;
+	padding-right: 6px;
+	margin-bottom:5px;
+	border-radius: 5px ;
+	transition: none;
+	color: #81A1C1;
+}
+
+#bluetooth {
+	margin-top: 3px;
+	margin-left: 8px;
+	padding-left: 6px;
+	padding-right: 6px;
+	margin-bottom: 3px;
+	border-radius: 5px ;
+	transition: none;
+	color: #BF616A;
+}
+
+
+#pulseaudio {
+	margin-top: 3px;
+	margin-left: 8px;
+	padding-left: 6px;
+	padding-right: 6px;
+	margin-bottom:5px;
+	border-radius: 5px ;
+	transition: none;
+	color: #B57E73;
+}
+
+#battery {
+	margin-top: 3px;
+	margin-left: 8px;
+	padding-left: 6px;
+	padding-right: 6px;
+	margin-bottom:5px;
+	border-radius: 5px ;
+	transition: none;
+	color: #6D8F80;
+}
+
+#battery.charging, #battery.plugged {
+	color: #ffffff;
+}
+
+#battery.critical:not(.charging) {
+    color: #ff4122;
+}
+
+
+#backlight {
+	margin-top: 3px;
+	margin-left: 8px;
+	padding-left: 6px;
+	padding-right: 6px;
+	margin-bottom:5px;
+	border-radius: 5px ;
+	transition: none;
+	color: #85B5CB;
+}
+#clock {
+	margin-top: 3px;
+	margin-left: 8px;
+	padding-left: 6px;
+	padding-right: 6px;
+	margin-bottom:5px;
+	border-radius: 5px ;
+	transition: none;
+	color: #ebcb89;
+}
+
+#memory {
+	margin-top: 3px;
+	margin-left: 8px;
+	padding-left: 6px;
+	margin-bottom:5px;
+	padding-right: 6px;
+	border-radius: 5px ;
+	transition: none;
+	color: #ffffff;
+}
+#cpu {
+	margin-top: 3px;
+	margin-bottom:3px;
+	padding-right: 6px;
+	padding-left: 6px;
+	border-radius: 5px ;
+	transition: none;
+	color: #ffffff;
+}
+
+#tray {
+	margin-top: 3px;
+	margin-left: 8px;
+	padding-left: 6px;
+	margin-bottom:5px;
+	padding-right: 6px;
+	border-radius: 5px ;
+	transition: none;
+	color: #ffffff;
+}
+
+#custom-launcher {
+	font-size: 24px;
+	margin-top: 3px;
+	margin-left: 8px;
+	padding-left: 6px;
+	padding-right: 5px;
+	border-radius: 5px ;
+	transition: none;
+    color: #ffffff;
+    background: #161320;
+}
+
+#custom-power {
+	font-size: 20px;
+	margin-top: 3px;
+	margin-left: 8px;
+	margin-right: 8px;
+	padding-left: 6px;
+	padding-right: 5px;
+	margin-bottom:5px;
+	border-radius: 5px ;
+	transition: none;
+	color: #ffffff;
+	background: #F28FAD;
+}
+
+#custom-wallpaper {
+	margin-top: 3px;
+	margin-left: 8px;
+	padding-left: 6px;
+	padding-right: 6px;
+	margin-bottom:5px;
+	border-radius: 5px ;
+	transition: none;
+	color: #ffffff;
+	background: #C9CBFF;
+}
+
+#custom-updates {
+	margin-top: 3px;
+	margin-left: 8px;
+	padding-left: 6px;
+	padding-right: 6px;
+	margin-bottom:5px;
+	border-radius: 5px ;
+	transition: none;
+	color: #ffffff;
+	background: #E8A2AF;
+}
+
+#custom-spotify {
+	margin-top: 3px;
+	margin-left: 8px;
+	padding-left: 6px;
+	padding-right: 6px;
+	margin-bottom:5px;
+	border-radius: 5px ;
+	transition: none;
+	color: #ffffff;
+	background: #EBCEF6;
+}
+
+#workspaces{
+    border-radius: 5px ;
+    margin-top : 3px;
+    margin-bottom: 3px;
+}
+#workspaces button {
+    padding: 1px 10px;
+    color: #ffffff;
+}
+
+#workspaces button.active {
+    color: #8FBCBB;
+}
+#workspaces button:hover {
+	background: #202323;
+}

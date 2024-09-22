@@ -1,0 +1,24 @@
+# Let's keep good old pywal look and feel
+backend = "wal"
+#color_space = "lch" # idc about this one..
+#threshold = "20" # neither about this, since I read wallust does it automagically..
+# classic look
+palette = "dark"
+# let's keep the contrast very very very clear.
+check_contrast = true
+
+[templates]
+hyprland.template = "hyprland"
+hyprland.target = "~/.config/hypr/colors.conf"
+
+
+kitty.template = 'kitty'
+kitty.target = "~/.config/kitty/themes/colors.conf"
+
+
+waybar.template='waybar'
+waybar.target = "~/hyprfilez/colors.css"
+
+colorgen.template = "colorgen"
+colorgen.target = "~/colorgen"
+

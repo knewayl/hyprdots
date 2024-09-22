@@ -1,0 +1,106 @@
+{
+	"layer": "top",
+	"modules-left": ["hyprland/workspaces"],
+	"modules-center": ["clock"],
+	"modules-right": ["network","bluetooth","backlight","pulseaudio","battery"],
+	
+	"pulseaudio": {
+		"tooltip": false,
+		"scroll-step": 5,
+		"format": "{icon} {volume}%",
+		"format-muted": "{icon} {volume}%",
+		"on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle",
+		"format-icons": {
+			"default": [""," "," "," "],
+   			"format-muted": [" "]
+		}
+	},
+
+  "hyprland/workspaces": {
+	        "format": "{icon}",
+     		"on-scroll-up": "hyprctl dispatch workspace e+1",
+     		"on-scroll-down": "hyprctl dispatch workspace e-1"
+    },
+	"network": {
+		"tooltip": false,
+		"format-wifi": "  {essid}",
+		"format-ethernet": " 󰈀 "
+	},
+
+	"bluetooth":{
+		"tooltip": false,
+		"format": "",
+		"format-connected": " {device_alias} {device_battery_percentage}%",
+		"format-disabled": ""
+
+	},
+	"backlight": {
+		"tooltip": false,
+		"format": " {}%",
+		"interval":1,
+        	"on-scroll-up": "brightnessctl set 1%+",
+		"on-scroll-down": "brightnessctl set 1%-"
+	},
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{icon}  {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+	"tray":{
+		"icon-size":18,
+		"spacing": 10
+	},
+    "clock": {
+        "format": "{:%I:%M %p}",
+	      "format-alt": "{:%d-%m-%Y}"
+    },
+    "cpu": {
+        "interval": 15,
+        "format": " {}%",
+        "max-length": 10
+    },
+    "memory": {
+        "interval": 30,
+        "format": " {}%",
+        "max-length": 10
+    },
+
+    
+    "custom/spotify": {
+        "format": " ",
+        "return-type": "json",
+        "on-click": "playerctl play-pause",
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous" },
+        "exec": "$HOME/.config/system_scripts/mediaplayer.py"
+    },
+
+
+    "custom/launcher":{
+        "format": " ",
+        "on-click": "wofi --show drun",
+        "on-click-right": "killall wofi"
+    },
+    "custom/power":{
+        "format": " ",
+        "on-click": "bash ~/.config/rofi/leave/leave.sh"
+    },
+    "custom/updates":{
+        "format": "{} Update(s)",
+        "exec": "checkupdates | wc -l",
+        "exec-if": "[[ $(checkupdates | wc -l) != 0 ]]",
+        "interval": 15,
+        "on-click": "alacritty -e paru -Syu && notify-send 'The system has been updated' "
+    },
+    "custom/wallpaper":{
+        "format":" ",
+        "on-click": "bash ~/.config/system_scripts/pkill_bc"
+    }
+}

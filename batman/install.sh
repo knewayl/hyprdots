@@ -13,7 +13,7 @@ rm -rf ~/.config/nvim/.git
 
 echo "setting up config filez"
 
-cd ~/hyprdots/
+cd ~/hyprdots/batman/
 cp -r hypr ~/.config/
 sudo cp -r waybar /etc/xdg/
 cp -r kitty ~/.config/
